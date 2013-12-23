@@ -1,4 +1,4 @@
-# Wiki
+# jetty-rest-angular
 
 ## Build instructions
 - Clone git repository
