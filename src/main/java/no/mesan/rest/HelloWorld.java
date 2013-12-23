@@ -1,4 +1,4 @@
-package no.mesan;
+package no.mesan.rest;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -14,5 +14,11 @@ public class HelloWorld {
     @GET
     public String helloWorld() {
         return "Hello world!";
+    }
+
+    @GET
+    @Path("/test")
+    public String test() {
+        return "test test test test";
     }
 }
