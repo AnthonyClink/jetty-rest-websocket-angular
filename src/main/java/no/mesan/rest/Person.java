@@ -15,10 +15,10 @@ public class Person {
     @GET
     public JSONArray getPersons() {
         final JSONArray persons = new JSONArray();
-        persons.put("Jon Harald Søby");
-        persons.put("Knut Esten Melandsø Nekså");
-        persons.put("Fredrik Wilhelm Borelly");
-        persons.put("Vegar Krogh Arnesten");
+        persons.put("Jon Smør");
+        persons.put("Vincens Lunge");
+        persons.put("Ole Padde");
+        persons.put("Espen Skjold");
         return persons;
     }
 }
