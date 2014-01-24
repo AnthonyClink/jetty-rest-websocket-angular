@@ -25,7 +25,7 @@ public class JettyStarter {
 
     private static ResourceHandler getResourceHandler() {
         final ResourceHandler resourceHandler = new ResourceHandler();
-        resourceHandler.setResourceBase("src/main/webapp/");
+        resourceHandler.setResourceBase("src/main/webapp/bin");
         resourceHandler.setWelcomeFiles(new String[] {"index.html"});
         return resourceHandler;
     }
