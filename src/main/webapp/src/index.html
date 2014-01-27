@@ -2,11 +2,11 @@
 <html ng-app="test">
 <head>
     <meta charset="UTF-8"/>
-    <title>Hest</title>
-    <script src="assets/ng-boilerplate-0.3.1.js"></script>
 </head>
 <body>
     Hallais
     <div ui-view="main"></div>
+    <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script><% }); %>
 </body>
 </html>
