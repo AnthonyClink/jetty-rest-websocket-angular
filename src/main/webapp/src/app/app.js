@@ -1,4 +1,5 @@
 angular.module("test", [
+        'ui.state',
         'templates-app',
         'templates-common',
         'test.new-person',

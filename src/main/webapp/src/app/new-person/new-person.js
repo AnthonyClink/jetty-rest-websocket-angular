@@ -1,4 +1,4 @@
-angular.module('test.new-person', ['ui.state'])
+angular.module('test.new-person', [])
 
 .config(function ($stateProvider) {
     $stateProvider.state('new-person', {

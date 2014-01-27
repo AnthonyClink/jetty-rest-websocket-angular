@@ -1,6 +1,4 @@
-angular.module('test.persons', [
-    'ui.state'
-])
+angular.module('test.persons', [])
 
 .config(function config($stateProvider) {
     $stateProvider.state('persons', {
