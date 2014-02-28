@@ -15,10 +15,4 @@ public class HelloWorld {
     public String helloWorld() {
         return "Hello world!";
     }
-
-    @GET
-    @Path("/test")
-    public String test() {
-        return "test test test test";
-    }
 }

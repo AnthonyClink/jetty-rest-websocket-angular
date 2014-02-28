@@ -1,10 +1,10 @@
-angular.module("test", [
-        'ui.state',
-        'templates-app',
-        'templates-common',
-        'test.new-person',
-        'test.persons'])
+angular.module("my-module", [
+    'ui.router',
+    'templates-app',
+    'templates-common',
+    'my-module.hello-world'
+])
 
 .config(function ($urlRouterProvider) {
-    $urlRouterProvider.otherwise('/persons');
+    $urlRouterProvider.otherwise('/hello-world');
 });

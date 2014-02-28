@@ -1,11 +1,12 @@
 <!DATATYPE html>
-<html ng-app="test">
+<html data-ng-app="my-module">
 <head>
     <meta charset="UTF-8"/>
+    <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
 </head>
 <body>
-    Hallais
-    <div ui-view="main"></div>
+    <div data-ui-view="main"></div>
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
 </body>
