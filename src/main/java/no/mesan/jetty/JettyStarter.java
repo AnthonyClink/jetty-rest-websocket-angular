@@ -21,7 +21,7 @@ import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainer
 import org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher;
 
 /**
- * @author Knut Esten Melandsø Nekså
+ * @author Knut Esten MelandsÃ¸ NeksÃ¥
  */
 public class JettyStarter {
     public static void main( final String[] args ) throws Exception {
