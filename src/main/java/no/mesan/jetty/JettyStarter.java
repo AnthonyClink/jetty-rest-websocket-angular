@@ -57,9 +57,7 @@ public class JettyStarter {
 
     private static ContextHandler getAngularContext() {
         final ContextHandler vaktContext = new ContextHandler();
-        final ResourceHandler resourceHandler = new ResourceHandler();
-        resourceHandler.setResourceBase("src/main/webapp/bin");
-        vaktContext.setHandler(resourceHandler);
+        vaktContext.setHandler(getResourceHandler("bin"));
         vaktContext.setContextPath("/");
         return vaktContext;
     }
@@ -82,11 +80,8 @@ public class JettyStarter {
 
     private static ResourceHandler getResourceHandler(final String systemResourcePath) {
         final ResourceHandler resourceHandler = new ResourceHandler();
-
         final String resourceBase = ClassLoader.getSystemResource(systemResourcePath).toExternalForm();
         resourceHandler.setResourceBase(resourceBase);
-
-        resourceHandler.setWelcomeFiles(new String[] {"index.html"});
         return resourceHandler;
     }
 }

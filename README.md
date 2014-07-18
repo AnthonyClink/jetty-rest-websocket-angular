@@ -1,6 +1,15 @@
-# jetty-rest-angular
+# jetty-rest-websocket-angular
+
+## Dependencies
+- NPM
+- Bower
 
 ## Build instructions
 - Clone git repository
-- Run main-method in no.mesan.jetty.JettyStarter
+- Enter project directory
+- Run ``mvn install``
+
+## Start server
+- Enter project directory
+- Run ``java -jar target/server.jar``
 
